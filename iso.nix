@@ -6,9 +6,6 @@
 		<nixpkgs/nixos/modules/installer/cd-dvd/channel.nix>
 	];
 
-	# Debug builds only
-	isoImage.squashfsCompression = "lz4";
-
 	# Whitelist wheel users to do anything
 	security.polkit.extraConfig = ''
 		polkit.addRule(function(action, subject) {
